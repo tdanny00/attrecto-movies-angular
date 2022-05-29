@@ -7,7 +7,6 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { SandboxComponent } from './pages/sandbox/sandbox.component';
 import { MoviesComponent } from './pages/movies/movies.component';
 import { MoviesService } from './services/movies.service';
-import { FormComponent } from './components/form/form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -17,7 +16,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     SandboxComponent,
     ToolbarComponent,
     MoviesComponent,
-    FormComponent,
 
   ],
   imports: [

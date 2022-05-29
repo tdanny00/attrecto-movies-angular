@@ -33,6 +33,7 @@ export class MoviesComponent implements OnInit {
 
 
 
+
  
 
 
@@ -103,19 +104,15 @@ export class MoviesComponent implements OnInit {
   }
   onClickOpenForm(id:number){
     let index = this.movies.findIndex(e => e.id === id);
-    if ( index !== -1) {
-      this.openform = true;
-      console.log(this.movies[index]);
-      this.movieTitle = this.movies[index].title;
-
-    }
-    else{
-      
-    }
-    
+      if ( index !== -1) {
+        this.openform = true;
+        this.movieTitle = this.movies[index].title;
+  
+      }
+      else{
+        console.log("HIBA")
+      }
   }
-
-
   sort(){
     switch(this.sortSelected) {
       case "title":

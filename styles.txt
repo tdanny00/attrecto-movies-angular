@@ -1,0 +1,66 @@
+    <div className='cta'>
+        <a href="" className='btn'>Önéletrajz</a>
+        <a href="#contact" className='btn btn-primary'>Kapcsolat</a>
+    </div>
+
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap: 1.2rem
+}
+
+
+header {
+    height: 100vh;
+    padding-top: 4rem;
+    overflow: hidden;
+}
+
+.header__container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+
+ <div className="container header__container">
+        <h1>Tölgyesi Dániel</h1>
+        <h3 className="text-light">Mérnökinformatikus Hallgató</h3>
+        <CTA/>
+        <HeaderSocials />
+      <div className="me">
+        <img src={ME} alt="me" />
+      </div>
+------------------------------------
+
+
+
+.btn {
+    width: max-content;
+    display: inline-block;
+    color: var(--color-primary);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background: var(--color-white);
+    color: var(--color-bg);
+}
+
+.btn-primary {
+    background: var(--color-primary);
+    color: var(--color-bg);
+}
+
+------------ MOVIES
+<ul class="movies-class">
+    <li *ngFor = "let movies of model">
+        <span>{{movies.id}}</span> {{movies.title}} {{movies.year}} {{movies.rating}}{{movies.thumbnail}}
+    </li>
+</ul>

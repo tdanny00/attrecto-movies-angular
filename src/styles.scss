@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+@use '~bootstrap/scss/bootstrap';
+@use '~bootstrap-icons/font/bootstrap-icons';
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Oswald:wght@300;400;500;600&family=Poppins:wght@100;300;400&family=Quicksand:wght@300&display=swap');
+
+body {
+    font-family:'Poppins', sans-serif; ;
+    background-color: #1D1E2F;
+    height: 100vh;
+    font-weight: 400;
+    background-image: url(./assets/bg-style.png);
+}
+h2 {
+    margin-top: 1rem;
+    display: grid;
+    justify-content: center;
+    color:white;
+}
+.btn {
+    width: max-content;
+    display: inline-block;
+    color: #409BD7;
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid #409BD7;
+    transition: all 400ms ease;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    justify-content: center;
+}
+
+.btn:hover {
+    background: white;
+    color: #1D1E2F;
+}
+
+.btn-primary {
+    background: #409BD7;
+    color: #1D1E2F;
+}
+
+h1 {
+    color:white;
+}
+
+
+/* Importing Bootstrap SCSS file. */
+
